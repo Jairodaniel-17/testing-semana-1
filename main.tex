@@ -1,0 +1,62 @@
+\documentclass[12pt,a4paper]{report}
+
+% --- Codificación y fuentes ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{newtxtext,newtxmath} % Times New Roman
+\usepackage{csquotes}
+
+% --- Idioma y formato ---
+\usepackage[spanish, es-nodecimaldot, es-noshorthands]{babel}
+\usepackage[none]{hyphenat}
+\sloppy % evita desbordes y cortes feos
+
+% --- Gráficos ---
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage[a4paper,margin=2.54cm]{geometry}
+\usepackage{setspace}          % para doble espacio
+\doublespacing % APA requiere doble espaciado
+
+% --- Bibliografía APA ---
+\usepackage[
+  backend=biber,
+  style=apa,
+  sorting=nyt,
+  language=spanish
+]{biblatex}
+\DeclareLanguageMapping{spanish}{spanish-apa}
+\addbibresource{references.bib}
+
+% --- Hipervínculos (después de todo lo demás) ---
+\usepackage[
+  colorlinks=true,
+  linkcolor=blue,
+  citecolor=blue,
+  urlcolor=blue,
+  pdfauthor={Autor},
+  pdftitle={Fundamentos técnicos relacionados en Ingeniería de Software}
+]{hyperref}
+
+% tablas
+\usepackage{longtable} % 
+\usepackage{booktabs}
+\begin{document}
+
+\input{portada.tex}
+\tableofcontents
+\clearpage
+\pagenumbering{arabic}
+\setcounter{page}{2}
+
+\input{introduccion.tex}
+
+\input{caps/cap1.tex}
+\input{caps/cap2.tex}
+\input{caps/cap3.tex}
+\input{caps/cap4.tex}
+\input{conclusion.tex}
+
+\printbibliography
+
+\end{document}

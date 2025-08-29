@@ -1,0 +1,81 @@
+
+\chapter{Fundamentos técnicos relacionados}
+\label{chap:fundamentos}
+
+La Ingeniería de Software, como disciplina, requiere un entramado sólido de conocimientos técnicos complejos que apoyen la elaboración, evaluación y evolución de sistemas informáticos efectivos y confiables. Este capítulo pretende ofrecer una visión ampliada y profunda de los fundamentos técnicos claves involucrados, en línea con los estándares y prácticas recomendadas en el \textit{Software Engineering Body of Knowledge (SWEBOK)} \parencite{swebok2024}. Los conceptos abordados aquí habilitan a los ingenieros a tomar decisiones fundamentadas y efectuar análisis rigurosos en proyectos complejos.
+
+\section{Fundamentos de computación: Algoritmos y estructuras de datos}
+Los algoritmos y estructuras de datos constituyen el corazón del diseño y evaluación del software eficiente. Más allá de la simple implementación de funciones, comprender el impacto temporal y espacial de las soluciones permite diseñar sistemas con desempeño predecible y optimizado. Además, la elección adecuada de estructuras —como listas enlazadas, árboles balanceados o tablas hash— influye decisivamente en la escalabilidad.
+
+Este conocimiento se articula no solo en la corrección funcional, sino en el análisis formal mediante notaciones asintóticas ($O(\cdot)$, $\Theta(\cdot)$, $\Omega(\cdot)$) que describen límites inferiores y superiores para el uso de recursos computacionales \parencite{clrs2009,knuth1997}. Técnicas modernas incluyen estrategias de programación dinámica, algoritmos voraces y paradigmas de divide y vencerás, necesarios antes de afrontar la complejidad inherente a problemas reales.
+
+\subsection*{Temas esenciales}
+\begin{itemize}
+  \item Verificación formal de algoritmos: pruebas mediante invariantes y métodos inductivos.
+  \item Complejidad computacional: clasificación y comparación de algoritmos para decisión informada.
+  \item Estructuras avanzadas: montículos para colas de prioridad, grafos para modelado de relaciones complejas.
+  \item Aplicaciones: algoritmos clásicos como Dijkstra para rutas, Kruskal para árboles de expansión mínima, algoritmos de búsqueda en profundidad y amplitud.
+  \item Consideraciones en ingeniería: coste amortizado, optimización para jerarquías de memoria, y diseño concurrente.
+\end{itemize}
+
+
+\section{Fundamentos matemáticos: Lógica y probabilidad discreta}
+La base matemática que sustenta la ingeniería de software permite formalizar el razonamiento con precisión. La lógica proposicional y de primer orden es el lenguaje para especificaciones y verificación automatizada de sistemas, garantizando corrección y comportamiento deseado. Por otra parte, la teoría de conjuntos y combinatoria estructuran la resolución de problemas discretos, mientras que la teoría de grafos modela relaciones y flujos de información intrínsecos a muchas arquitecturas software \parencite{rosen2019,ross2014}.
+
+La probabilidad discreta provee herramientas para enfrentar la incertidumbre y analizar algoritmos aleatorizados, además de ser fundamental para el análisis estadístico aplicado en evaluación y predicción del comportamiento del software.
+
+\subsection*{Temas esenciales}
+\begin{itemize}
+  \item Lógica formal y métodos de deducción automática.
+  \item Técnicas combinatorias y principios de conteo para análisis exhaustivos.
+  \item Propiedades y algoritmos en grafos: conectividad, recorridos, y coloración.
+  \item Probabilidad discreta: variables aleatorias, esperanza matemática, varianza y distribuciones relevantes.
+  \item Modelos probabilísticos aplicados, como cadenas de Markov para sistemas estocásticos.
+\end{itemize}
+
+
+\section{Fundamentos de ingeniería: Modelado y análisis estadístico}
+El enfoque empírico en ingeniería de software demanda la transformación de datos observados en conclusiones válidas mediante el modelado estadístico. Aspectos críticos incluyen la estimación de parámetros de desempeño y calidad, pruebas de hipótesis para validar supuestos, y análisis de confiabilidad para prever la tasa y naturaleza de fallos \parencite{ross2014,swebok2024}.
+
+Las prácticas instrumentales como el diseño experimental y la validación cruzada son imprescindibles para obtener resultados confiables y generalizables, sentando bases para decisiones informadas y mejoras continuas en procesos y productos.
+
+\subsection*{Temas esenciales}
+\begin{itemize}
+  \item Diseño experimental robusto y cálculo del tamaño muestral adecuado para asegurar representatividad.
+  \item Técnicas de estimación puntual y por intervalos, con aplicación de pruebas paramétricas y no paramétricas.
+  \item Modelos predictivos mediante regresión y clasificación; implementación y evaluación mediante validación cruzada.
+  \item Métricas de confiabilidad y análisis de modelos de tasas de fallo para anticipar y mitigar riesgos.
+\end{itemize}
+
+
+\section{Organización de computadoras y sistemas operativos}
+El conocimiento de la arquitectura informática y sistemas operativos provee la comprensión necesaria para mejorar el rendimiento y la seguridad del software. Desde la jerarquía de memoria, donde intervienen registros, caché y memoria principal, hasta la gestión de procesos y mecanismos de entrada/salida, cada capa influye en la ejecución y estabilidad del sistema \parencite{patterson2014,tanenbaum2014}.
+
+Este entendimiento es vital para optimizar la asignación de recursos, coordinar concurrencia y evitar condiciones problemáticas como deadlocks, aspectos imprescindibles en el desarrollo profesional riguroso.
+
+\subsection*{Temas esenciales}
+\begin{itemize}
+  \item Unidades de procesamiento y modelos de memoria.
+  \item Estructura y funcionamiento de la jerarquía memoria-caché-registros.
+  \item Gestión de procesos, sincronización, exclusión mutua y prevención de bloqueos.
+  \item Algoritmos y políticas para planificación de CPU, paginación, swapping, y virtualización.
+  \item Arquitectura de dispositivos y manejo seguro de E/S.
+\end{itemize}
+
+
+\section{Conceptos de redes y bases de datos}
+Las redes y bases de datos constituyen los pilares para la construcción de sistemas distribuidos y aplicaciones empresariales modernas. Es fundamental comprender el modelo OSI/TCP-IP, protocolos de transporte y seguridad para garantizar comunicaciones confiables y seguras \parencite{silberschatz2010,swebok2024}.
+
+En el ámbito de bases de datos, el modelado conceptual, normalización adecuada, gestión de transacciones y optimización de consultas forman el núcleo para la integridad y eficiencia de los datos almacenados y procesados.
+
+\subsection*{Temas esenciales}
+\begin{itemize}
+  \item Modelos de referencia para redes y pila de protocolos (OSI/TCP-IP).
+  \item Protocolos fundamentales: IP, TCP, UDP, y variantes HTTP/2/3, incluyendo mecanismos de seguridad TLS.
+  \item Diseño y normalización de bases de datos relacionales, gestión ACID, índices y técnicas de optimización.
+  \item Sistemas distribuidos: modelos de consistencia, tolerancia a fallos y patrones de diseño como consenso y elección de líder.
+\end{itemize}
+
+
+\section*{Cierre del capítulo}
+Este capítulo ha desarrollado un marco técnico integral que sirve como base para el análisis, diseño y mejora de procesos y productos en ingeniería de software, en concordancia con el SWEBOK. La integración de fundamentos computacionales, matemáticos, estadísticos e infraestructurales es condición necesaria para abordar con efectividad los retos actuales en testing y calidad del software, tarea que continúa en los siguientes capítulos de este trabajo.

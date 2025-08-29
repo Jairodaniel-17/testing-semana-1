@@ -1,0 +1,165 @@
+\chapter{Profesionalismo, ética y toma de decisiones}
+
+\section{Profesionalismo, ética y responsabilidad legal}
+El profesionalismo en ingeniería de software integra competencia técnica, conducta ética y cumplimiento legal. La práctica responsable exige no solo saber cómo diseñar y construir software, sino también entender el impacto social y legal de nuestras decisiones profesionales. En este sentido, \textcite{swebok2024} enfatiza que los códigos de conducta y los marcos regulatorios son elementos centrales para garantizar la confianza pública en los sistemas de software.
+
+\begin{longtable}{p{3cm} p{12cm}}
+\caption{Dimensiones del profesionalismo en ingeniería de software} \\
+\toprule
+\textbf{Dimensión} & \textbf{Descripción} \\
+\midrule
+\endfirsthead
+
+\toprule
+\textbf{Dimensión} & \textbf{Descripción} \\
+\midrule
+\endhead
+
+\multicolumn{2}{r}{\textit{Continúa en la siguiente página}} \\
+\endfoot
+
+\bottomrule
+\endlastfoot
+
+Competencia técnica & Mantener y demostrar conocimientos actualizados (metodologías, lenguajes, prácticas de prueba y seguridad) y aplicarlos con juicio profesional. \\
+
+Ética profesional & Actuar con integridad, transparencia y evitar conflictos de interés; reportar riesgos serios que puedan dañar a usuarios o terceros. \\
+
+Responsabilidad legal & Cumplir leyes de propiedad intelectual, privacidad y regulaciones sectoriales; entender contractualidad y responsabilidad frente a fallos. \\
+
+Impacto social & Evaluar consecuencias (sesgo, privacidad, seguridad) y diseñar mitigaciones para minimizar daños sociales. \\
+\end{longtable}
+
+\section{Dinámicas de grupo y habilidades de comunicación}
+La ingeniería de software es esencialmente una actividad colectiva. El rendimiento del proyecto depende tanto de habilidades sociales (comunicación, liderazgo) como de capacidades técnicas.
+
+\begin{longtable}{p{4cm} p{11cm}}
+\caption{Dinámicas de grupo y su efecto en proyectos de software} \\
+\toprule
+\textbf{Dinámica} & \textbf{Efecto / uso en proyectos} \\
+\midrule
+\endfirsthead
+
+\toprule
+\textbf{Dinámica} & \textbf{Efecto / uso en proyectos} \\
+\midrule
+\endhead
+
+\multicolumn{2}{r}{\textit{Continúa en la siguiente página}} \\
+\endfoot
+
+\bottomrule
+\endlastfoot
+
+Cooperativa & Facilita prácticas ágiles: planificación conjunta, revisiones de código y retroalimentación continua; reduce errores de integración y mejora la calidad. \\
+
+Competitiva & Útil para innovación puntual (hackatones, concursos), pero si se mantiene sostenida puede fragmentar conocimiento y dificultar la colaboración. \\
+
+Mixta & En organizaciones grandes, equipos colaboran internamente pero compiten por recursos; requiere coordinación, gobernanza y canales claros de transferencia de conocimiento. \\
+\end{longtable}
+
+\subsection*{Habilidades clave}
+\begin{itemize}
+  \item \textbf{Comunicación escrita:} documentación clara y concisa adaptada a distintos públicos.
+  \item \textbf{Escucha activa:} comprender necesidades del cliente y del equipo para evitar malentendidos.
+  \item \textbf{Presentación de resultados:} traducir lo técnico a lo no técnico y viceversa.
+  \item \textbf{Resolución de conflictos:} negociar prioridades y compromisos sin sacrificar requisitos críticos.
+\end{itemize}
+
+\section{Fundamentos de economía y toma de decisiones}
+Tomar decisiones informadas exige medir costos, beneficios y riesgos. El análisis económico aplicado al software ayuda a priorizar iniciativas y defender inversiones ante stakeholders.
+
+\subsection*{Métricas económicas básicas}
+\begin{itemize}
+  \item \textbf{Costo total de propiedad (TCO):} suma de costos de desarrollo, operación y mantenimiento durante el ciclo de vida.
+  \item \textbf{Retorno sobre la inversión (ROI):}
+\end{itemize}
+
+\begin{equation}\label{eq:roi}
+ROI \;=\; \dfrac{\text{Beneficios proyectados} - \text{Costos de inversión}}{\text{Costos de inversión}}
+\end{equation}
+\noindent\textit{Ecuación \ref{eq:roi}. Cálculo del retorno sobre la inversión (ROI).}
+
+\begin{itemize}
+  \item \textbf{Valor Presente Neto (VPN):} evaluación de flujos de caja futuros descontados para decisiones multi-período.
+\end{itemize}
+
+\subsection*{Criterios de decisión}
+Cuando hay múltiples alternativas, emplea criterios claros (valor esperado, ROI, TCO, impacto en plazo). Combinar métricas cuantitativas con juicios cualitativos (riesgo reputacional, cumplimiento legal) es práctica recomendable en proyectos críticos.
+
+\section{Análisis de riesgo e incertidumbre}
+Los riesgos en software pueden ser técnicos, de gestión o externos. Cuantificarlos y priorizarlos permite aplicar mitigaciones coste-efectivas.
+
+\begin{longtable}{p{4cm} p{11cm}}
+\caption{Clasificación breve de riesgos en proyectos de software} \\
+\toprule
+\textbf{Tipo de riesgo} & \textbf{Descripción / Ejemplo} \\
+\midrule
+\endfirsthead
+
+\toprule
+\textbf{Tipo de riesgo} & \textbf{Descripción / Ejemplo} \\
+\midrule
+\endhead
+
+\multicolumn{2}{r}{\textit{Continúa en la siguiente página}} \\
+\endfoot
+
+\bottomrule
+\endlastfoot
+
+Técnico & Integración de tecnologías nuevas, deuda técnica que impide entregas puntuales, falta de pruebas automatizadas. \\
+
+De gestión & Estimaciones erróneas, rotación de personal, dependencias externas incumplidas. \\
+
+Externo & Cambios regulatorios, variaciones en el mercado, fallos de proveedores críticos. \\
+\end{longtable}
+
+\subsection*{Cuantificación rápida}
+Un enfoque útil para priorizar riesgos es el Valor Esperado (EMV, Expected Monetary Value):
+
+\begin{equation}\label{eq:emv}
+EMV \;=\; \sum_{i} p_i \cdot c_i
+\end{equation}
+\noindent\textit{Ecuación \ref{eq:emv}. Valor Esperado (EMV) — probabilidad por impacto monetario para priorización de riesgos.}
+
+La aplicación práctica del EMV requiere estimaciones conservadoras y revisión continua; sus fundamentos probabilísticos se apoyan en la literatura de estadística aplicada \parencite{ross2014}.
+
+\subsection*{Estrategias de mitigación}
+\begin{itemize}
+  \item \textbf{Evitar:} cambiar el plan para eliminar riesgo crítico.
+  \item \textbf{Transferir:} contratos, seguros y acuerdos SLA con penalidades claras.
+  \item \textbf{Mitigar:} prototipos, pruebas tempranas, arquitecturas desacopladas y revisiones técnicas.
+  \item \textbf{Aceptar:} asumir el riesgo cuando el costo de mitigación supera su impacto esperado.
+\end{itemize}
+
+\section{Análisis de compensación (trade-off analysis)}
+El análisis de trade-offs permite comparar alternativas cuando los criterios son contradictorios (por ejemplo: rendimiento vs. costo, tiempo vs. calidad). Debe apoyarse en métricas medibles y, cuando proceda, en experimentación controlada.
+
+\begin{longtable}{p{3cm} p{4cm} p{4cm} p{4cm}}
+\caption{Ejemplo simplificado de análisis de compensación en arquitectura} \\
+\toprule
+\textbf{Alternativa} & \textbf{Ventaja principal} & \textbf{Desventaja} & \textbf{Adecuado para} \\
+\midrule
+\endfirsthead
+
+\toprule
+\textbf{Alternativa} & \textbf{Ventaja principal} & \textbf{Desventaja} & \textbf{Adecuado para} \\
+\midrule
+\endhead
+
+\multicolumn{4}{r}{\textit{Continúa en la siguiente página}} \\
+\endfoot
+
+\bottomrule
+\endlastfoot
+
+Monolito & Simplicidad de despliegue y menor sobrecarga operacional & Escalabilidad y despliegue restringidos; acoplamiento elevado entre módulos & Proyectos pequeños / POC \\
+
+Microservicios & Escalabilidad independiente y despliegue por servicio & Complejidad en orquestación, observabilidad e integración & Sistemas grandes, equipos distribuidos \\
+
+Serverless & Baja inversión inicial y facturación por uso & Dependencia del proveedor y límites de ejecución & Prototipos, cargas variables y validaciones rápidas \\
+\end{longtable}
+
+\subsection*{Notas sobre trade-offs algorítmicos}
+En elecciones algorítmicas o de diseño interno, la literatura clásica enfatiza que mejorar una métrica normalmente perjudica otra (por ejemplo, tiempo vs. espacio). Para decisiones de este tipo, apóyate en análisis de complejidad y medidas empíricas antes de optar por una solución \parencite{clrs2009,knuth1997}.

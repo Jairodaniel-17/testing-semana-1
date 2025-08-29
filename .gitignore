@@ -1,0 +1,57 @@
+# --- Archivos auxiliares LaTeX ---
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.idx
+*.ilg
+*.ind
+*.ist
+*.log
+*.lof
+*.lot
+*.lol
+*.out
+*.run.xml
+*.synctex.gz
+*.synctex.gz(busy)
+*.toc
+
+# --- Archivos temporales ---
+*.nav
+*.snm
+*.vrb
+
+# --- Archivos de glossaries ---
+*.acn
+*.acr
+*.alg
+*.glg
+*.glo
+*.gls
+*.glsdefs
+
+# --- Archivos de nomenclatura ---
+*.nlo
+*.nls
+
+# --- Archivos de biblatex ---
+*.bbl
+*.bcf
+*.blg
+
+# --- Otros temporales comunes ---
+*.dvi
+*.ps
+*.pdfsync
+*.thm
+*.upa
+*.upb
+
+# --- Archivos de latexmk ---
+*.latexmk
+
+# --- quitamos tambien el main.pdf, porque se va a generar con latexmk 
+main.pdf

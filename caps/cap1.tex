@@ -1,0 +1,63 @@
+\chapter{Análisis, diseño y construcción de software}
+\section{Análisis y gestión de requisitos}
+Imagina que quieres encargar un traje a medida. No le dirías al sastre simplemente "hazme un traje" y esperarías lo mejor. Tendrías una conversación profunda con él. Hablarían sobre la ocasión para la que lo necesitas, el tipo de tela que prefieres, cómo quieres que te quede, el número de bolsillos, el color de los botones. El sastre te tomaría medidas, te haría preguntas que quizás ni habías considerado y, juntos, llegarían a una visión clara de cómo sería el traje perfecto.
+Esto, en esencia, es el análisis y la gestión de requisitos. Es el corazón del "qué" vamos a construir. Es el proceso de sentarse a conversar con las personas que usarán el software para entender de verdad sus necesidades, sus problemas y sus deseos. Consiste en escuchar, hacer las preguntas correctas y, lo más importante, traducir todos esos sueños y necesidades en un conjunto de planos claros y comprensibles que todo el equipo pueda seguir.
+La parte de "gestión" es igual de crucial. ¿Qué pasa si, a mitad del proceso, te das cuenta de que necesitas un bolsillo extra en el traje? No puedes simplemente añadirlo sin más, pues podría afectar el corte y la estructura. La gestión de requisitos es el acuerdo que tienes con el sastre para manejar esos cambios de forma ordenada, evaluando cómo afectan al tiempo de entrega y al costo, asegurando que el resultado final siga siendo exactamente lo que necesitas.
+\section{Diseño arquitectónico y estructural}
+Continuando con la idea del traje, ya tenemos los planos detallados de qué queremos. Ahora, el sastre debe decidir cómo lo va a construir. Este es el momento del diseño arquitectónico y estructural.
+No se trata de elegir el color del hilo para los botones, eso vendrá después. Se trata de las decisiones fundamentales que darán forma y soporte a toda la prenda. ¿Qué tipo de corte usará para que la chaqueta caiga perfectamente sobre los hombros? ¿Cómo unirá las piezas de la tela para que el traje sea cómodo y duradero? ¿Qué estructura interna le dará para que mantenga su forma con el paso del tiempo? Estas son las decisiones arquitectónicas.
+En el mundo del software, esto se traduce en preguntas igualmente críticas. ¿Usaremos una base de datos central o varias distribuidas? ¿Cómo se comunicarán entre sí los diferentes módulos del programa? ¿Qué tecnología o framework nos servirá como el esqueleto principal de nuestra aplicación? Estas decisiones son como los cimientos y las vigas maestras de un edificio, son increíblemente difíciles y costosas de cambiar una vez que la construcción ha comenzado.
+Un buen diseño arquitectónico no solo garantiza que el software funcione bien hoy, sino que también asegura que sea adaptable y mantenible en el futuro. Permite que, si el día de mañana necesitamos añadir una nueva funcionalidad, podamos hacerlo sin tener que demoler todo el edificio. Se trata de tener visión de futuro, de construir una estructura sólida y flexible que soporte no solo las necesidades actuales, sino también las que aún no podemos prever.
+\section{Construcción y codificación}
+Si el diseño arquitectónico es el plano detallado de nuestra casa, la construcción es el momento en que los carpinteros, electricistas y albañiles se ponen manos a la obra. Es la fase donde las ideas y los diagramas se transforman en algo tangible, en el software funcional. El libro SWEBOK nos dice que esta etapa es mucho más que simplemente "escribir código", es una combinación de codificación, verificación, pruebas de unidad, pruebas de integración y depuración.
+Piénsalo como el trabajo de un artesano. No se limita a seguir el plano sin más, sino que toma decisiones cruciales en cada paso. Un aspecto fundamental que el SWEBOK resalta es la necesidad de minimizar la complejidad. Esto no es por una cuestión de elegancia técnica, sino por una razón profundamente humana, nuestra capacidad para manejar sistemas complejos es limitada. Por eso, el objetivo no es escribir un código "inteligente" y enrevesado que solo su autor pueda entender, sino crear un código simple y fácil de leer. Se trata de construir pensando en la persona que vendrá después, ya sea un compañero de equipo o nosotros mismos dentro de seis meses, para que pueda entenderlo, corregirlo y mejorarlo sin dificultad.
+Además, durante la construcción, se toman pequeñas pero importantes decisiones de diseño. El plano general ya existe, pero el programador debe decidir la mejor manera de implementar un algoritmo específico o de organizar una estructura de datos particular. Es un proceso de refinamiento continuo donde la calidad se construye en cada paso, no se añade al final.
+\section{Estrategias y niveles de pruebas (testing)}
+Una vez que hemos construido una parte de nuestro software, ¿cómo sabemos que funciona bien? Aquí es donde entran las estrategias y niveles de pruebas. El SWEBOK presenta las pruebas no como una simple fase final para dar el visto bueno, sino como una disciplina de investigación, una verificación dinámica cuyo objetivo es encontrar fallos. De hecho, una de sus ideas más poderosas es que una prueba exitosa no es la que pasa, sino la que hace que el sistema falle, porque nos ha permitido descubrir un problema antes de que lo haga el usuario final.
+Como no podemos probar cada una de las infinitas combinaciones posibles, necesitamos una estrategia inteligente. El libro describe un enfoque estructurado en diferentes niveles, similar a cómo se ensambla y prueba un coche:
+Pruebas unitarias: Primero, probamos cada pieza por separado y en aislamiento. ¿Funciona el motor por sí solo? ¿Encienden las luces? En software, esto significa probar una función o un pequeño módulo para asegurarnos de que hace correctamente su única y específica tarea.
+Pruebas de integración: Luego, empezamos a conectar las piezas. ¿El motor funciona correctamente con la transmisión? ¿El volante hace girar las ruedas? En esta fase, verificamos las interacciones entre los componentes del software, asegurando que la comunicación y el paso de datos entre ellos sea el correcto.
+Pruebas de sistema: Una vez que el coche está completamente ensamblado, lo sacamos a la carretera. Probamos el comportamiento del sistema en su conjunto, verificando que todas sus partes funcionan en armonía para cumplir con los requisitos generales, desde la aceleración hasta el funcionamiento del aire acondicionado.
+\section{Estrategias y niveles de pruebas (testing)}
+La entrega del software no es el final de la historia, es más como el momento en que te entregan las llaves de tu nueva casa. Has verificado que todo está en su sitio (las pruebas), pero ahora comienza la verdadera vida del producto, el día a día. El mantenimiento del software es todo lo que ocurre a partir de ese momento, y según nos enseña el SWEBOK, esta es a menudo la fase más larga y costosa de todo el ciclo de vida.
+Lejos de ser una tarea menor, el mantenimiento es un proceso dinámico para asegurar que el software siga siendo útil y valioso a lo largo del tiempo. Es la forma en que el software se adapta, crece y sobrevive en un mundo en constante cambio.
+El SWEBOK nos ayuda a entender que "mantenimiento" no es una sola cosa, sino un conjunto de actividades diferentes. Podemos clasificarlas en cuatro categorías principales para comprender mejor su naturaleza:
+
+ 
+
+\begin{longtable}{p{3cm} p{4cm} p{8cm}}
+\caption{Tipos de mantenimiento de software según SWEBOK}\label{tab:mantenimiento}\\
+\toprule
+\textbf{Tipo de mantenimiento} & \textbf{Analogía con una casa} & \textbf{Descripción según SWEBOK} \\
+\midrule
+\endfirsthead
+
+% Encabezado para páginas de continuación
+\multicolumn{3}{c}{\tablename\ \thetable\ -- \textit{(continuación)}}\\
+\toprule
+\textbf{Tipo de mantenimiento} & \textbf{Analogía con una casa} & \textbf{Descripción según SWEBOK} \\
+\midrule
+\endhead
+
+% Pie en páginas intermedias indicando que continúa
+\midrule
+\multicolumn{3}{r}{\small\emph{continuación en la siguiente página}}\\
+\endfoot
+
+% Pie final (última página)
+\bottomrule
+\endlastfoot
+
+Correctivo & Arreglar una gotera &
+Esta es la tarea clásica de cazar y corregir los defectos o ``bugs'' que se descubren una vez que el software está en uso por personas reales. Se trata de una reacción a problemas que han surgido y necesitan ser solucionados. \\
+
+Adaptativo & Actualizar el sistema eléctrico para nuevos electrodomésticos &
+El mundo alrededor del software cambia constantemente. Un nuevo sistema operativo, una actualización en la base de datos, o nuevas regulaciones de seguridad. Este tipo de mantenimiento consiste en modificar el software para que siga funcionando correctamente en ese entorno tecnológico o de negocio que ha evolucionado. \\
+
+Perfectivo & Añadir una nueva habitación o remodelar la cocina &
+A medida que los usuarios utilizan el software, descubren nuevas formas de mejorarlo. Pueden pedir nuevas funcionalidades que lo hagan más útil o más rápido. Este tipo de mantenimiento no corrige errores, sino que evoluciona el producto para mejorar su rendimiento y añadirle valor. Sorprendentemente, el SWEBOK señala que esta es la categoría que consume la mayor parte del esfuerzo de mantenimiento. \\
+
+Preventivo & Revisar los cimientos y reforzar una viga antes de que se rompa &
+A veces, el código, aunque funciona, puede ser enrevesado, antiguo o difícil de entender. El mantenimiento preventivo es el acto de ``refactorizar'' o reestructurar el código interno para hacerlo más limpio, más eficiente y más fácil de mantener en el futuro, sin cambiar su comportamiento externo. Es una inversión para prevenir problemas mayores más adelante. \\
+
+\end{longtable}
